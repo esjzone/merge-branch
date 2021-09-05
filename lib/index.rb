@@ -13,7 +13,7 @@ end
 
 @event = JSON.parse(File.read(ENV['GITHUB_EVENT_PATH']))
 @head_to_merge = presence(ENV['INPUT_HEAD_TO_MERGE']) || presence(ENV['INPUT_FROM_BRANCH']) || presence(ENV['GITHUB_SHA']) # or brach name
-@repository = presence(ENV['INPUT_GITHUB_REPOSITORY']) || presence(ENV['GITHUB_REPOSITORY'])
+@repository = presence(ENV['INPUT_REPOSITORY']) || presence(ENV['GITHUB_REPOSITORY'])
 @github_token = presence(ENV['INPUT_GITHUB_TOKEN']) || presence(ENV['GITHUB_TOKEN'])
 
 inputs = {
