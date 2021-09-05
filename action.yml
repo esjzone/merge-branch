@@ -9,6 +9,9 @@ inputs:
   label_name:
     description: 'PR Label name'
     required: false
+  repository:
+    description: 'The repository of branch'
+    required: false
   target_branch:
     description: 'The name of target branch to merge'
     required: true
